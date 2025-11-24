@@ -7,6 +7,7 @@ pub enum TransactionType {
 }
 
 #[derive(Debug, Clone)]
+// Structure
 pub struct Transaction {
     pub id: u32,
     pub title: String,
@@ -17,6 +18,7 @@ pub struct Transaction {
     pub date: DateTime<Utc>,
 }
 
+// Implementation
 impl Transaction {
     pub fn new_income(
         id: u32,

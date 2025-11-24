@@ -1,11 +1,13 @@
 use crate::transaction::{Transaction, TransactionType};
 use std::collections::HashMap;
 
+// strucure
 pub struct FinanceTracker {
     transactions: Vec<Transaction>,
     next_id: u32,
 }
 
+// implementation
 impl FinanceTracker {
     pub fn new() -> Self {
         FinanceTracker {

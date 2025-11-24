@@ -69,19 +69,9 @@ fn view_transactions(tracker: &FinanceTracker) {
 
 fn view_breakdown(tracker: &FinanceTracker) {
     println!("\n--- Expense Breakdown by Category ---");
-    let breakdown = tracker.expense_breakdown();
+    visualization::display_expense_chart(tracker);
 
-    if breakdown.is_empty() {
-        println!("No expenses recorded yet.");
-        return;
-    }
-
-    for (category, total) in breakdown {
-        println!("{}: ${:.2}", category, total);
-    }
-
-    println!("\nTotal Expenses: ${:.2}", tracker.total_expenses());
-    println!("Total Income: ${:.2}", tracker.total_income());
+    println!("\nTotal Income: ${:.2}", tracker.total_income());
     println!("Net Balance: ${:.2}", tracker.net_balance());
 }
 
