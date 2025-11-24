@@ -15,8 +15,6 @@ External Libraries: chrono (This is a date and time library for Rust)
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
 - [Rust GitHub Problems](https://github.com/rust-lang/rustlings)
 - [Rust By Example](https://doc.rust-lang.org/rust-by-example/)
 
